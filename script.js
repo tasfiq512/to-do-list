@@ -17,3 +17,9 @@ function addTask(){
 	inputBox.value = '';
 	saveData();
 }
+
+
+// Saves the data to the local storage so it will stay when you refresh the page 
+function saveData(){
+	localStorage.setItem('data', listContainer.innerHTML);
+}
